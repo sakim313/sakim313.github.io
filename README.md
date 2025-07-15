@@ -112,6 +112,92 @@
     });
   </script>
 
+  <!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daftar Surat</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+      <span class="navbar-brand mb-0 h1">Daftar Surat Al-Qur'an</span>
+    </div>
+  </nav>
+
+  <!-- Konten -->
+  <div class="container mt-4">
+    <div class="mb-4">
+      <input type="text" id="cari-surat" class="form-control form-control-lg" placeholder="🔍 Cari nama surat...">
+    </div>
+
+    <div class="row g-3 card-surat-list"></div>
+  </div>
+
+  <!-- Script -->
+  <script src="daftarSurat.js"></script>
 </body>
 </html>
 
+
+
+
+</body>
+</html>
+
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Detail Surat</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">⬅ Kembali</a>
+      <span class="navbar-text">Detail Surat</span>
+    </div>
+  </nav>
+
+  <!-- Konten -->
+  <div class="container mt-4">
+    <!-- Judul surat -->
+    <div id="judul-surat" class="mb-4 text-center"></div>
+
+    <!-- Tombol Audio -->
+    <div class="text-center mb-4">
+      <button id="btn-audio" class="btn btn-primary">🔊 Dengarkan Tilawah</button>
+    </div>
+
+    <!-- Audio Player -->
+    <audio id="audio-player" controls class="d-none w-100"></audio>
+
+    <!-- Daftar ayat -->
+    <div class="row" id="daftar-ayat"></div>
+  </div>
+
+  <!-- Script -->
+  <script src="detailSurat.js"></script>
+</body>
+</html>
+''
